@@ -2,20 +2,11 @@ script: 'ci/travis.rb'
 before_install:
   - gem install bundler --version 1.17.3
 rvm:
-  - 1.9.3
-  - 2.0.0
-  - 2.1
   - 2.2
   - 2.3
-  - ruby-head
-  - rbx-2
-  - jruby
 env:
   - "GEM=railties"
   - "GEM=ap,am,amo,as"
-  - "GEM=ar:mysql"
-  - "GEM=ar:mysql2"
-  - "GEM=ar:sqlite3"
   - "GEM=ar:postgresql"
 matrix:
   allow_failures:
